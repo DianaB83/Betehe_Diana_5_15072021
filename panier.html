@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Orinoco est un site de peluches vintage">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link href="css/panier.css" rel="stylesheet">
+  <title>Orinoco | Panier</title>
+</head>
+
+<body>
+  <header>
+    <h1>Orinoco</h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./panier.html">Panier</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="selection_panier">
+    <h3 class="recap_panier">Récapitulatif de votre panier</h3>
+    <table>
+      <tr>
+        <th>Nom</th>
+        <th>Couleur</th>
+        <th>Prix</th>
+      </tr>
+      <tr id="tableaupanier">
+
+      </tr>
+    </table>
+  </section>
+
+  <h3>Formulaire de Validation</h3>
+
+  <form method="POST" action="" id="order">
+
+    <div class="form-control">
+      <label for="nom">Nom</label> :
+      <input type="text" name="nom" id="nom" required placeholder="nom">
+    </div>
+    <div class="form-control">
+      <label for="prenom">Prénom</label> :
+      <input type="text" name="prenom" id="prenom" required placeholder="prénom">
+    </div>
+    <div class="form-control">
+      <label for="courriel">Courriel</label> :
+      <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
+    </div>
+    <div class="form-control">
+      <label for="adresse">Adresse</label> :
+      <input type="adresse" name="adresse" id="adresse" required placeholder="">
+    </div>
+    <div class="form-control">
+      <label for="code postal">Code postal</label> :
+      <input type="number" name="codepostal" id="codepostal" required placeholder="">
+    </div>
+    <div class="form-control">
+      <label for="ville">Ville</label> :
+      <input type="text" name="ville" id="ville" required placeholder="">
+    </div>
+    <div class="button">
+      <input type="submit" value="Envoyer" id="envoyerReponse">
+      <input type="reset" value="Annuler">
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="informations">
+      <ul>
+        <li>Qui sommes nous ?</li>
+        <li>Mentions légales</li>
+        <li>Conditions générales</li>
+      </ul>
+    </div>
+  </footer>
+  <!--scripts-->
+  <script src="js/panier.js"></script>
+</body>
+
+</html>
